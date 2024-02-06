@@ -1,0 +1,5 @@
+ami_id           = "ami-0277155c3f0ab2930"
+instance_type    = "t2.micro"
+access_key       = "26jan"
+secret_key       = "/root/.ssh/id_rsa.pub"
+security_group   = "sg-0fac82f50b0c4682d"
