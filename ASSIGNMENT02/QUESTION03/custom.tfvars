@@ -1,0 +1,16 @@
+aws_region         = "us-east-1"
+cidr               = "10.0.0.0/16"
+resource_name      = "terraform_vpc"
+nat_allocation     = "aws_eip.loadbalancer.id"
+nat_gateway        = "Nat_gateway"
+route_cidr01       = "10.0.0.0/8"
+route_cidr02       = "16.0.0.0/8"
+instance_ami       = "ami-0a3c3a20c09d6f377"
+instance_type      = "t2.micro"
+key_pair           = "25jan"
+subnets = {
+  cidr-pub01 = "10.0.0.0/24"
+  cidr-pub02 = "10.0.1.0/24"
+  cidr-pvt01 = "10.0.2.0/24"
+  cidr-pvt02 = "10.0.3.0/24"
+}
